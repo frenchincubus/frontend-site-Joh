@@ -1,0 +1,25 @@
+<p>
+  disco works!
+</p>
+<div class="container">
+  <div class="row d-flex justify-content-center">
+    <div class="jumbotron">
+      <div *ngFor="let album of albums">
+        <div class="row">
+          <div class="col">
+            <img src="http://localhost/api_jj/api-jj/web/uploads/img/{{album.image.id}}.{{album.image.url}}" width="300px" height="300px">
+          </div>
+          <div class="col">
+            <h4>{{album.titre}} ({{ album.image.date}})</h4>
+            <table class="table table-striped">
+              <tr *ngFor="let titre of album.titres,index as i">
+                <td>{{i + 1}}</td><td>{{titre.titre}}</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <br><hr>
+      </div>
+    </div>
+  </div>
+</div>

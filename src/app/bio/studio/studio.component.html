@@ -1,0 +1,15 @@
+<h2>EQUIPE STUDIO</h2>
+<div class="container">
+  <div class="row d-flex justify-content-center">
+      <ngb-carousel class="capchion">
+          <ng-template *ngFor="let image of images" ngbSlide>
+            <img src= "http://localhost/api_jj/api-jj/web/uploads/img/{{image.id}}.{{image.url}}" alt="{{ image.name }}" width="500px" height="500px">
+            <div class="capchion">
+              <h3>{{image.name}}</h3>
+              <p>{{image.content}}</p>
+              <br>
+            </div>
+          </ng-template>   
+      </ngb-carousel>
+  </div>
+</div>

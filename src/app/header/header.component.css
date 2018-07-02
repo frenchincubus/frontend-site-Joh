@@ -1,0 +1,33 @@
+
+.titlename {
+  color: white;
+  text-decoration: none;
+  top: 0;
+}
+
+.titlename h1 {
+  margin-top: -10px;
+}
+
+
+.navette {
+
+  z-index: 1;
+}
+
+.navette-scrolled {
+  width: 100%;
+  position: fixed;
+}
+
+@media only screen and (max-width : 768px) {
+  .titlename {
+    position: relative;
+    display: block;
+    clear: right;
+  }
+  .mainnav {
+    position: relative;
+    display: inline-block;
+  }
+}

@@ -1,0 +1,119 @@
+<!-- 
+<nav class="navbar navbar-expand-lg navbar-inverse bg-inverse navette" >
+      <a class="navbar-brand titlename" href="#"><h1>Johann Joosten</h1></a>
+      <div class=""></div>
+      <ul class="navbar-nav mainnav">
+        <li ngbDropdown >
+          <a style="cursor: pointer;"
+           ngbDropdownToggle
+           role="button"
+           >Bio & infos<span class="caret"></span></a>
+            <ul ngbDropdownMenu
+              [@dropState]>
+              <li><a style="cursor: pointer;" routerLink="/bio&infos" fragment="c1" (click)="onAnchorClick()">l'artiste</a></li>
+                <li><a style="cursor: pointer;" routerLink="/bio&infos" fragment="c3" (click)="onAnchorClick()">Discographie</a></li>
+                  <li><a style="cursor: pointer;" routerLink="/bio&infos" fragment="c4" (click)="onAnchorClick()">l'équipe live</a></li>
+                    <li><a style="cursor: pointer;" routerLink="/bio&infos" fragment="c5" (click)="onAnchorClick()">l'équipe studio</a></li>
+                      <li><a style="cursor: pointer;" routerLink="/bio&infos" fragment="c2" (click)="onAnchorClick()">Autour du groupe</a></li>
+            </ul>
+        </li>
+        <li ngbDropdown>
+          <a
+          style="cursor: pointer;"
+          ngbDropdownToggle
+          role="button"
+          >Médias<span class="caret"></span></a>
+            <ul ngbDropdownMenu
+            [@dropState]>
+              <li><a style="cursor: pointer;" routerLink="/medias" fragment="c1" (click)="onAnchorClick()">Audio</a></li>
+                <li><a style="cursor: pointer;" routerLink="/medias" fragment="c2" (click)="onAnchorClick()">Vidéos</a></li>
+                  <li><a style="cursor: pointer;" routerLink="/medias" fragment="c3" (click)="onAnchorClick()">Presse</a></li>
+                    <li><a style="cursor: pointer;" routerLink="/medias" fragment="c4" (click)="onAnchorClick()">Photos</a></li>
+            </ul>
+          </li>
+        <li ngbDropdown>
+          <a style="cursor: pointer;"
+             ngbDropdownToggle
+             role="button"
+          >Concerts<span class="caret"></span></a>
+            <ul ngbDropdownMenu
+                [@dropState]>
+              <li><a style="cursor: pointer;" routerLink="/concerts" fragment="c1" (click)="onAnchorClick()">A venir</a></li>
+                <li><a style="cursor: pointer;" routerLink="/concerts" fragment="c2" (click)="onAnchorClick()">Passés</a></li>
+            </ul>
+        </li>
+        <li><a style="cursor: pointer;" routerLink="/boutique">Boutique</a></li>
+        <li ngbDropdown>
+          <a style="cursor: pointer;"
+          ngbDropdownToggle
+          role="button"
+          >Divers<span class="caret"></span></a>
+            <ul ngbDropdownMenu
+              [@dropState]>
+              <li><a style="cursor: pointer;" routerLink="/divers" fragment="c1" (click)="onAnchorClick()">Contact</a></li>
+                <li><a style="cursor: pointer;"routerLink="/divers" fragment="c2" (click)="onAnchorClick()">Liens</a></li>
+                  <!-- <li><a style="cursor: pointer;">Livre d'or</a></li>
+                    <li><a style="cursor: pointer;" routerLink="/divers" fragment="c3" (click)="onAnchorClick()">Paroles et accords</a></li>
+            </ul>
+        </li>
+      </ul>
+</nav> -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Johann Joosten</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Bio & Infos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" style="cursor: pointer;" routerLink="/bio&infos/artiste"  >L'artiste</a>
+          <a class="dropdown-item"style="cursor: pointer;" routerLink="/bio&infos/discographie">Discographie</a>
+          <a class="dropdown-item"style="cursor: pointer;" routerLink="/bio&infos/equipelive">Equipe live</a>
+          <a class="dropdown-item"style="cursor: pointer;" routerLink="/bio&infos/equipestudio">Equipe studio</a>
+          <a class="dropdown-item"style="cursor: pointer;" routerLink="/bio&infos/autourdugroupe">Autour du groupe</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Médias
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" style="cursor: pointer;" routerLink="/medias" fragment="c1" (click)="onAnchorClick()">Audios</a>
+          <a class="dropdown-item"style="cursor: pointer;" routerLink="/medias" fragment="c2" (click)="onAnchorClick()">Vidéos</a>
+          <a class="dropdown-item"style="cursor: pointer;" routerLink="/medias" fragment="c3" (click)="onAnchorClick()">Presse</a>
+          <a class="dropdown-item"style="cursor: pointer;" routerLink="/medias" fragment="c4" (click)="onAnchorClick()">Photos</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Concerts
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" style="cursor: pointer;" routerLink="/concerts" fragment="c1" (click)="onAnchorClick()">A venir</a>
+          <a class="dropdown-item"style="cursor: pointer;" routerLink="/concerts" fragment="c2" (click)="onAnchorClick()">passés</a>
+         
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="cursor: pointer;" routerLink="/boutique">Boutique</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Divers
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" style="cursor: pointer;" routerLink="/divers" fragment="c1" (click)="onAnchorClick()">Contact</a>
+          <a class="dropdown-item"style="cursor: pointer;" routerLink="/divers" fragment="c2" (click)="onAnchorClick()">Liens</a>
+          <a class="dropdown-item"style="cursor: pointer;" routerLink="/divers" fragment="c3" (click)="onAnchorClick()">Paroles et accords</a>
+          <a class="dropdown-item"style="cursor: pointer;" routerLink="/divers" fragment="c4" (click)="onAnchorClick()">Livre d'or</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
